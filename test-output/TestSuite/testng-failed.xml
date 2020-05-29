@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [TestSuite]">
+  <parameter name="browser" value="chrome"/>
+  <parameter name="appURL" value="https://www.twoplugs.com/"/>
+  <test name="ChromeTest">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="appURL" value="https://www.twoplugs.com/"/>
+    <classes>
+      <class name="com.javascript.JavascriptExecutorDemo">
+        <methods>
+          <include name="senKeysByJS"/>
+        </methods>
+      </class> <!-- com.javascript.JavascriptExecutorDemo -->
+    </classes>
+  </test> <!-- ChromeTest -->
+</suite> <!-- Failed suite [TestSuite] -->

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="TestSuite" >
+
+		<parameter name="browser" value="firefox" />
+		<parameter name="appURL" value="https://www.twoplugs.com/" />
+
+	<test name="ChromeTest">
+		<classes>
+			<class name="com.javascript.JavascriptExecutorParameters">
+				<methods>
+					<include name="borderbyJS" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+		<parameter name="browser" value="chrome" />
+		<parameter name="appURL" value="https://www.twoplugs.com/" />
+
+	<test name="FirefoxTest">
+		<classes>
+			<class name="com.javascript.JavascriptExecutorParameters">
+				<methods>
+					<include name="scrollByJS" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+</suite>
+

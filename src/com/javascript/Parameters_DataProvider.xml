@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="TestSuite">
+
+	<test name="ChromeTest">
+
+		<parameter name="browser" value="chrome" />
+		<parameter name="appURL" value="https://www.twoplugs.com/" />
+
+		<classes>
+			<class name="com.javascript.JavascriptExecutorDemoDataProvider">
+			</class>
+		</classes>
+	</test>
+
+</suite>

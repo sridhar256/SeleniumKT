@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name = "TesNG">
+
+	<test name = "May">
+	<parameter name = "browser" value = "chrome" />
+	<parameter name = "appURL" value = "https://www.twoplugs.com/" />
+	 			<groups>
+				<run>
+					<exclude name = "Regression"/> 
+					<include name = "Sanity" />
+				</run>
+			</groups>
+		<classes>
+			<class name="com.javascript.GroupingTests" >
+			<methods>
+			<include name = "test1" />
+			</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

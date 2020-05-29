@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="TestSuite">
+
+	<test name="ChromeTest">
+
+		<parameter name="browser" value="chrome" />
+		<parameter name="appURL" value="https://www.twoplugs.com/" />
+		<parameter name ="nodeUrl" value = "http://192.168.0.7:5555/wd/hub/ "/>
+
+		<classes>
+			<class name="com.javascript.JavascriptExecutorParametersGrid">
+				<methods>
+					<include name="borderbyJS" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+</suite>
